@@ -11,10 +11,9 @@
 		9D65559A1C990CE000694041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6555991C990CE000694041 /* AppDelegate.m */; };
 		9D65559D1C990CE000694041 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D65559C1C990CE000694041 /* ViewController.m */; };
 		9D6555A01C990CE000694041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D65559E1C990CE000694041 /* Main.storyboard */; };
-		9D6555A21C990CE000694041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6555A11C990CE000694041 /* Assets.xcassets */; };
-		9D6555A51C990CE000694041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6555A31C990CE000694041 /* LaunchScreen.storyboard */; };
 		9D6555B01C990CE000694041 /* WaterWaveDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6555AF1C990CE000694041 /* WaterWaveDomeTests.m */; };
 		9D6555BB1C990CE000694041 /* WaterWaveDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6555BA1C990CE000694041 /* WaterWaveDomeUITests.m */; };
+		9D6555CA1C990D2100694041 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6555C91C990D2100694041 /* WaterWaveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +41,6 @@
 		9D65559B1C990CE000694041 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9D65559C1C990CE000694041 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D65559F1C990CE000694041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D6555A11C990CE000694041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D6555A41C990CE000694041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6555A61C990CE000694041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D6555AB1C990CE000694041 /* WaterWaveDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterWaveDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6555AF1C990CE000694041 /* WaterWaveDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveDomeTests.m; sourceTree = "<group>"; };
@@ -51,6 +48,8 @@
 		9D6555B61C990CE000694041 /* WaterWaveDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterWaveDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6555BA1C990CE000694041 /* WaterWaveDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveDomeUITests.m; sourceTree = "<group>"; };
 		9D6555BC1C990CE000694041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6555C81C990D2100694041 /* WaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
+		9D6555C91C990D2100694041 /* WaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +104,9 @@
 				9D6555991C990CE000694041 /* AppDelegate.m */,
 				9D65559B1C990CE000694041 /* ViewController.h */,
 				9D65559C1C990CE000694041 /* ViewController.m */,
+				9D6555C81C990D2100694041 /* WaterWaveView.h */,
+				9D6555C91C990D2100694041 /* WaterWaveView.m */,
 				9D65559E1C990CE000694041 /* Main.storyboard */,
-				9D6555A11C990CE000694041 /* Assets.xcassets */,
-				9D6555A31C990CE000694041 /* LaunchScreen.storyboard */,
 				9D6555A61C990CE000694041 /* Info.plist */,
 				9D6555951C990CE000694041 /* Supporting Files */,
 			);
@@ -243,8 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6555A51C990CE000694041 /* LaunchScreen.storyboard in Resources */,
-				9D6555A21C990CE000694041 /* Assets.xcassets in Resources */,
 				9D6555A01C990CE000694041 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +270,7 @@
 				9D65559D1C990CE000694041 /* ViewController.m in Sources */,
 				9D65559A1C990CE000694041 /* AppDelegate.m in Sources */,
 				9D6555971C990CE000694041 /* main.m in Sources */,
+				9D6555CA1C990D2100694041 /* WaterWaveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +312,6 @@
 				9D65559F1C990CE000694041 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9D6555A31C990CE000694041 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D6555A41C990CE000694041 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -498,6 +488,7 @@
 				9D6555C11C990CE000694041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6555C21C990CE000694041 /* Build configuration list for PBXNativeTarget "WaterWaveDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +497,7 @@
 				9D6555C41C990CE000694041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D6555C51C990CE000694041 /* Build configuration list for PBXNativeTarget "WaterWaveDomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +506,7 @@
 				9D6555C71C990CE000694041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
